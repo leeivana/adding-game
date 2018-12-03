@@ -10,8 +10,4 @@ class Player
     @lives -= 1
   end
 
-  # def status(arr)
-  #   arr.map{|player| puts player.name, player.lives}
-  # end
-
 end

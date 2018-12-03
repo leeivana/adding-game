@@ -11,7 +11,7 @@ class Start
   def run
     while !end?
       puts "#{current_player.name}  : #{@question.ask_question}"
-      puts "Enter your answer"
+      print "Enter your answer: "
       input = gets.chomp.to_i
       if @question.check_answer(input)
         puts "That's Correct!"
@@ -29,7 +29,6 @@ class Start
       current_player
     end
     puts "#{current_player.name} WINS with a score of #{current_player.lives}/3"
-    # puts current_player.lives
     puts "----- GAME OVER -----"
   end
 
